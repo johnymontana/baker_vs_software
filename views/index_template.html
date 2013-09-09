@@ -73,20 +73,24 @@
       <div id="myTabContent" class="tab-content">
 
         <div class="tab-pane fade in active" id="overview">
-        
+	<br><p>
+	  In 2001 as I was preparing to graduate high school, I was offered a job as head baker at a local bakery where I had been working part time. Instead of taking the job, I chose to go to school at UM and eventually become a software developer instead of a baker. I often find myself considering what my life would have been like had I taken the baker job. I decided to use this project as an opportunity to analyze BLS data and compare the two jobs.</p>
+	<p>
+	  Rather than looking at national trends, I only considered data specific to Missoula county. Limited information is available for bakers in Missoula, so as a proxy I examined the "Food Manufacturing" industry. As a proxy for software developers, I use the "Custom Computer Programming" industry. 
+	</p> 
 	  
 
 	</div>
 
 
 	<div class="tab-pane fade" id="hypothesis">
-	   
+	 <br> <p>With this project I wanted to answer a simple question: should I have taken the baker job or was I right to continue on in college and become a software developer? There are many factors to consider that make a job "better" than another: stress level, time commitment, pay, benefits, etc. For the scope of this project I consider only a subset of those factors: pay, industry growth, and job openings. Being a casual observer of econimc trends I have a hypothesis:</p> <br>
 	  <div class="panel panel-info">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">Hypothesis</h3>
 	    </div>
 	    <div class="panel-body">
-	    <p>Hypotheis: Since 2001, it is better to have been working as a Software Developer than a Baker in Missoula, MT. </p>
+	    <p>Hypotheis: Since 2001, it is better to have been working as a Software Developer than a Baker in Missoula, MT, as demonstrated by pay, industry growth and job openings. </p>
 	    </div>
 	  </div>
 
@@ -104,6 +108,10 @@
 	    </div>
 	    <div class="panel-body">
 	      <p>This visual is a bad example because it uses a non-standard method to display time-series data. With time-series data typically the x-axis is used to represent time. Instead this visual uses the x-axis to show employment levels. Time is represented only by a label on the scatter plots themselves. This results in initial confusion: at first glance, employment in book stores appears to be <strong>growing</strong> linearly. After orienting themselves to the visual, the viewer is able to discern that in fact employment in the industry is <strong>shrinking</strong> linearly.</p>
+
+	      <p>
+	      I also find the use of the size of bubble to represent average employment per establishment troubling. In general this is a good idea as it allows the visual to convey another dimension of information, however the way this is implemented in this visual is less than ideal. Because average employment per establishment is essentially the x-axis value divided by the y-axis value and since the overall size of the industry has been shrinking linearly, the average employment per establishment has been relatively unchanged. Therefore, all bubbles appear to be the same size. This leaves the viewer confused. "Am I missing something?" the viewer wonders.
+	      </p>
 	    </div>
 	  </div>
 
@@ -120,7 +128,7 @@
 	      <h3 class="panel-title">Why this is a good visual</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>Details: interactive, detail is hidden but can be retrived easily</p>
+	      <p>I find this data visualization particularly appealing. It allows for the type of comparison across industry that is the focus of my hypothesis for this project. There is quite a bit of information being displayed in this single graphic. Interactive features allow the viewer to select industries to view detailed information or zoom in on a section of the chart to compare industries. This is a great example of Tufte's   </p>
 	    </div>
 	  </div>
 
