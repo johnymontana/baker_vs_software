@@ -74,7 +74,7 @@
 
         <div class="tab-pane fade in active" id="overview">
 	<br><p>
-	  In 2001 as I was preparing to graduate high school, I was offered a job as head baker at a local bakery where I had been working part time. Instead of taking the job, I chose to go to school at UM and eventually become a software developer instead of a baker. I often find myself considering what my life would have been like had I taken the baker job. I decided to use this project as an opportunity to analyze BLS data and compare the two jobs.</p>
+	  In 2001, as I was preparing to graduate high school, I was offered a job as head baker at a local bakery where I had been working part time. Instead of taking the job, I chose to go to school at UM and eventually become a software developer instead of a baker. I often find myself considering what my life would have been like had I taken the baker job. I decided to use this project as an opportunity to analyze BLS data in an attempt to compare the two jobs.</p>
 	<p>
 	  Rather than looking at national trends, I only considered data specific to Missoula county. Limited information is available for bakers in Missoula, so as a proxy I examined the "Food Manufacturing" industry. As a proxy for software developers, I use the "Custom Computer Programming" industry. 
 	</p> 
@@ -84,13 +84,13 @@
 
 
 	<div class="tab-pane fade" id="hypothesis">
-	 <br> <p>With this project I wanted to answer a simple question: should I have taken the baker job or was I right to continue on in college and become a software developer? There are many factors to consider that make a job "better" than another: stress level, time commitment, pay, benefits, etc. For the scope of this project I consider only a subset of those factors: pay, industry growth, and job openings. Being a casual observer of econimc trends I have a hypothesis:</p> <br>
+	 <br> <p>With this project I wanted to answer a simple question: should I have taken the baker job or was I right to continue on in college and become a software developer? There are many factors to consider that make a job "better" than another: stress level, time commitment, pay, benefits, etc. For the scope of this project I consider only a subset of those factors: pay, industry growth, and job openings. Being a casual observer of economic trends I have a hypothesis about the data:</p> <br>
 	  <div class="panel panel-info">
 	    <div class="panel-heading">
 	      <h3 class="panel-title">Hypothesis</h3>
 	    </div>
 	    <div class="panel-body">
-	    <p>Hypotheis: Since 2001, it is better to have been working as a Software Developer than a Baker in Missoula, MT, as demonstrated by pay, industry growth and job openings. </p>
+	    <p>Since 2001, it is better to have been working as a Software Developer than a Baker in Missoula, MT, as demonstrated by pay, industry growth and job openings. </p>
 	    </div>
 	  </div>
 
@@ -107,10 +107,10 @@
 	      <h3 class="panel-title">Why this is a bad visual</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>This visual is a bad example because it uses a non-standard method to display time-series data. With time-series data typically the x-axis is used to represent time. Instead this visual uses the x-axis to show employment levels. Time is represented only by a label on the scatter plots themselves. This results in initial confusion: at first glance, employment in book stores appears to be <strong>growing</strong> linearly. After orienting themselves to the visual, the viewer is able to discern that in fact employment in the industry is <strong>shrinking</strong> linearly.</p>
+	      <p>This visual shows employment in book, periodical and music stores from 2001-2011. This visual is a bad example because it uses a non-standard method to display time-series data. With time-series data typically the x-axis is used to represent time. Instead this visual uses the x-axis to show employment levels. Time is represented only by a label on the scatter plots themselves. This results in initial confusion: at first glance, employment in book stores appears to be <strong>growing</strong> linearly. After orienting themselves to the visual, the viewer is able to discern that in fact employment in the industry is <strong>shrinking</strong> linearly.</p>
 
 	      <p>
-	      I also find the use of the size of bubble to represent average employment per establishment troubling. In general this is a good idea as it allows the visual to convey another dimension of information, however the way this is implemented in this visual is less than ideal. Because average employment per establishment is essentially the x-axis value divided by the y-axis value and since the overall size of the industry has been shrinking linearly, the average employment per establishment has been relatively unchanged. Therefore, all bubbles appear to be the same size. This leaves the viewer confused. "Am I missing something?" the viewer wonders.
+	      I also find the use of the size of bubble to represent average employment per establishment troubling. In general this is a good idea as it allows the visual to convey another dimension of information, however the way this is implemented in this visual is less than ideal. Because average employment per establishment is essentially the x-axis value divided by the y-axis value and since the overall size of the industry has been changing linearly, the average employment per establishment has been relatively unchanged. Therefore, all bubbles appear to be the same size. This leaves the viewer confused. "Am I missing something?" the viewer wonders.
 	      </p>
 	    </div>
 	  </div>
@@ -128,7 +128,7 @@
 	      <h3 class="panel-title">Why this is a good visual</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>I find this data visualization particularly appealing. It allows for the type of comparison across industry that is the focus of my hypothesis for this project. Consisten with Tufte's principle of maximizing the "data-ink ratio" there is quite a bit of information being displayed in this single graphic. Interactive features allow the viewer to select industries to view detailed information or zoom in on a section of the chart to compare industries. This level of interactivity allows the visualization to maximize data density, without losing legibility or information since the user can zoom in and/or select individual points for more information. Some visuals use interactive features as a gimmick, resulting in chartjunk or focusing on design rather than the actual display of data, however I think this visual provides the right level of interactivity without impacting graphical integrity. This graphic became somewhat of an inspiration as moved forward with project and indeed Visual #4 is an attempt to reproduce this graphic and some of the interactive features, but with data pertinent to the investigation of our hypothesis. </p>
+	      <p>I find this data visualization particularly appealing. It allows for the type of comparison across industry that is the focus of my hypothesis for this project. Consistent with Tufte's principle of maximizing the "data-ink ratio" there is quite a bit of information being displayed in this single graphic. Interactive features allow the viewer to select industries to view detailed information or zoom in on a section of the chart to compare industries. This level of interactivity allows the visualization to maximize data density, without losing legibility or information since the user can zoom in and/or select individual points for more information. Some visuals use interactive features as a gimmick, resulting in chartjunk or focusing on design rather than the actual display of data, however I think this visual provides the right level of interactivity without impacting graphical integrity. This graphic became an inspiration for me as I moved forward with the project and indeed Visual #4 is an attempt to reproduce this graphic and some of the interactive features, but with data pertinent to the investigation of our hypothesis. </p>
 	    </div>
 	  </div>
 
@@ -143,7 +143,7 @@
 	      <h3 class="panel-title">About Visual #1</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>This visual shows average annual earnings in Missoula, MT for the food manufacturing and custom computer programming industries from 1990-2012. To maintain graphical integrity and avoid distortions all values are adjusted for inflation by converting to 2012 equivilent dollars using the Consumer Price Index. </p>
+	      <p>This visual shows average annual earnings in Missoula, MT for the food manufacturing and custom computer programming industries from 1990-2012. To maintain graphical integrity and avoid distortions all values are adjusted for inflation by converting to 2012 equivalent dollars using the Consumer Price Index. </p>
 
 	      <p>This graph shows data consistent with our hypothesis: it is clear that average annual earnings in the computer programming industry have been growing steadily while food manufacturing salaries have not even been keeping up with inflation. It is interesting to note that as recently as 2000 food manufacturing on average paid more than computer programming, but since then salaries have diverged dramatically.</p>
 	    </div>
@@ -165,7 +165,13 @@
 	      <p>Number of establishments per industry is used as a measurement of industry size in this graphic. I debated plotting a growth rate, rather than the actual number of establishments, however I felt that since the initial size of the industries were similar any conversion to a growth rate would not add any benefit and might further distort interpretation of the data.</p>
 
 	      <p>We can see that initally food manufacturing is a larger industry, however computer programming quickly grows to dwarf the food manufacturing industry. This is consistent with our hypotheis: it is better to be employed in an industry that is consistently growing, rather than one that is stagnant.</p>
-	    </div>
+	      
+	      <p>It is also important to note that number of establishments might not be a perfect measurement of the size of an industry. Employment level, the number of persons employed per industry, is also available and is indeed used in Visual #4. </p>  
+
+
+	  </div>
+
+    
 	  </div> 
 
 	</div> <!-- / .tab-pane -->
@@ -180,7 +186,7 @@
 	      <h3 class="panel-title">About Visual #3</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>In this visual we encounter data that is not consistent with our hypothesis: on average it appears the job openings for food manufacturing are higher than computer programming suggesting it might be easier to find and maintain a job as a baker.</p>
+	      <p>In this visual we encounter data that is not consistent with our hypothesis: on average it appears the job openings for food manufacturing are higher than computer programming suggesting it might be easier to find and maintain a job in the food manufacturing industry.</p>
 
 	      <p> This graphic maintains graphical integrity by adjusting values to take into account the size of industry: instead of showing the number of job openings, the number of openings is divded by overall employment in the industry resulting in a job opening rate.</p>
 	    </div>
@@ -198,9 +204,9 @@
 	      <h3 class="panel-title">About Visual #4</h3>
 	    </div>
 	    <div class="panel-body">
-	      <p>This visual attempts to show similar data as that presented in Visuals #1 and #2: on the x-axis the percent change in the number of workers in the industry and on the y-axis the percent change in inflation adjusted annual earnings, both from 2001-2012. This graphic shows data consitent with our hypotheis: average food manufacturing inflation-adjusted earnings have <strong>declined</strong> by 26.63% while average computer programming inflation-adjusted earnings have increaded by 32.88%. Similarly, industry size (as measured by number of people employed in that industry) has increased for food manufacturing by 2.69% while computer programming industry has incrased by a much larger 117.31%. Consistent with our hypotheis: it is much better to be employed in an industry that is growing rapidly with increasing average salaries.</p>
+	      <p>This visual attempts to show similar data as that presented in Visuals #1 and #2: on the x-axis the percent change in the number of workers in the industry and on the y-axis the percent change in inflation adjusted annual earnings, both from 2001-2012. This graphic shows data consitent with our hypotheis: average food manufacturing inflation-adjusted earnings have <strong>declined</strong> by 26.63% while average computer programming inflation-adjusted earnings have increaded by 32.88%. Similarly, industry size (as measured by number of people employed in that industry) has increased for food manufacturing by 2.69% while the computer programming industry has incrased by a much larger 117.31%. Consistent with our hypotheis: it is much better to be employed in an industry that is growing rapidly with increasing average salaries.</p>
 
-	      <p>Graphical integrity is maintained in this graphic by ensuring the time periods used for computing changes are consistent across both axes, adjusting salary data for inflation, and plotting percent changes instead of value changes. Additionally data density is maximized, without losing meaning with the help of interactive tool-tip like detail information display.</p>
+	      <p>Graphical integrity is maintained in this graphic by ensuring the time periods used for computing changes are consistent across both axes, adjusting salary data for inflation, and plotting percent changes instead of value changes. Data density is maximized, without losing meaning with the help of interactive tool-tip like detail information display.</p>
 	    </div>
 	  </div>
 

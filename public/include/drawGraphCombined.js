@@ -19,12 +19,14 @@ var drawGraphCombined = function(chart_id, series_data, y_axis_id, legend_id, y_
 	var y_axis = new Rickshaw.Graph.Axis.Y( {
 		graph: graph,
 		orientation: 'left',
-		tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+		//tickFormat: Rickshaw.Fixtures.Number.formatKMBT,
+		tickFormat: function(x) { return x*100;},
 		element: document.getElementById(y_axis_id)
 	});
 
 	var x_axis = new Rickshaw.Graph.Axis.X({
-		graph: graph
+		graph: graph,
+		tickFormat: function(x) { return x * 100;}
 	});
 
 	//var legend = new Rickshaw.Graph.Legend( {
