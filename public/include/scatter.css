@@ -1,0 +1,46 @@
+.chart_container {
+	position: relative;
+	margin-left: 40px;	
+	display: inline-block;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.chart {
+	position: relative;
+	left:40px;
+	display: inline-block;
+	margin-left: 40px;
+}
+.y_axis {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left:20px;
+	width: 40px;
+}
+
+.x_axis {
+	position: absolute;
+	bottom:10;
+}
+
+.y_label {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	//left: 40px;
+	width: 40px;
+}
+
+.x_label {
+      position: absolute;
+      left: 100px;
+      //height: 40px;
+}
+.legend {
+	position: relative;
+	left: 40px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 0 0 0 10px;
+}
+

@@ -1,0 +1,30 @@
+
+<!doctype html>
+
+<script src="/include/d3.v3.min.js" charset="utf-8"></script>
+<script src="/include/rickshaw.js"></script>
+<script src="/include/drawGraphCombined.js"></script>
+
+
+<link rel="stylesheet" href="/include/rickshaw.min.css">
+<link rel="stylesheet" href="/include/scatter.css">
+
+
+<div id="chart_container" class="chart_container">
+	<div id="y_label" class="y_label"></div>
+	<div id="y_axis" class="y_axis"></div>
+	<div id="chart" class="chart"></div>
+	<div id="x_label" class="x_label" style:"text-anchor: end;">Percent Change In Number of Workers in Industry</div>
+</div>
+
+
+
+<script>
+
+
+
+
+drawGraphCombined("#chart", {{ insert_obj seriesData }}, "y_axis", "#legend", "#y_label", "Percent Change in Inflation Adjusted Earnings");
+
+
+</script> 
